@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+<meta charset="utf-8">
+<title>triangle Indicator</title>
+<link rel="stylesheet" type="text/css" href="css/triangleIndicate.css"/>
+<style>
+body{background-color:gray;}
+#div1, #div2, #div3{margin:100px auto; width:50%; height:100px;}
+#div1{background-color:yellow; }
+#div2{background-color:red; }
+#div3{background-color:black; }
+</style>
+</head>
+<body>
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/triangleIndicate.js"></script>
+<script>
+	//add a default triangle indicator to the target // 添加 默认 指示三角
+	$("#div1").triangle();
+	//add a default triangle indicator to the bottom of the target //在底部 添加 默认 指示三角
+	$("#div2").triangle({position:"bottom"});
+	//add a purple triangle indicator to the top of the target //在顶部 添加 紫色 指示三角
+	$("#div3").triangle({position:"top", color:"purple"});
+</script>
+</body>
+</html>
